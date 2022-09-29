@@ -19,7 +19,7 @@ public class SearchKeyWordHW {
 		// create a file instance for directory file
 		File dir = new File(path);
 
-		// create a PrintWriter intstance for formatted output stream
+		// create a PrintWriter instance for formatted output stream
 		PrintWriter pw = new PrintWriter("output.txt");
 
 		// Get all the file names in the directory path
@@ -70,7 +70,7 @@ public class SearchKeyWordHW {
 		String[] words = null;
 		// use FileReader(File file) create new FileReader given the file to read from
 		FileReader fr = new FileReader(file);
-		// BufferedReader(FileReader File) creat new BufferedReader to read text from
+		// BufferedReader(FileReader File) create new BufferedReader to read text from
 		// input stream
 		BufferedReader br = new BufferedReader(fr);
 
@@ -152,7 +152,7 @@ public class SearchKeyWordHW {
 
 	public static void main(String[] args) throws IOException {
 
-//		createFile("D:\\622file");
+		createFile("D:\\622file");
 		searchWord("robot");
 		searchWord("fitness");
 		searchWord("wearable");
