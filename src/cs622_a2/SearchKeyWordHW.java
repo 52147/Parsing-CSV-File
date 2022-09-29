@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class SearchKeyWordHW {
+	
+	// Hashmap to store <input, search times> 
 	static HashMap<String, Integer> map = new HashMap<>();
 	/**
 	 * function to merge multiple files in one file
