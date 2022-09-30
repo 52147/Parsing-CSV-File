@@ -82,11 +82,11 @@ String str = words[15].replaceAll("[^\\d.]", "");
 // \d means digits
 ```
 ### split when it matches commas that are followed by an even number of quotes (or no quotes).
-- when file contain: 
+- when column contain: 
 ```
 book, {a: 123, b: 23445, c: 4555}, book name
 ```
-- split the col use these Regex
+- split the column use these Regex
 - Output:
 ```
 book
