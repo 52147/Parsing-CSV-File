@@ -82,18 +82,7 @@ String str = words[15].replaceAll("[^\\d.]", "");
 // \d means digits
 ```
 
-## Exception
-### java.lang.NumberFormatException: For input string: ""19","
-- If we not remove the non-digt char by using the regular expression first,
-- when we try to conver the String to Integer, it will occur a Number fromat Exception.
 
-``` java
-// need to convert the string fisrt to prevent the number format exception when we need to convert the string to integer
-String str = words[15].replaceAll("[^\\d.]", "");
-if (Integer.parseInt(s) <= 1) {
-...
-}
-``` 
 ### split when it matches commas that are followed by an even number of quotes (or no quotes).
 - when column contain: 
 ```
@@ -115,6 +104,19 @@ words = s.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
 // $ ignore line terminators, in MULTILINE mode $ matches just before a line terminator or the end of the input sequence.
 // ^ ignore line terminators, matches at the beginning of input and after any line terminator except at the end of input. 
 ```
+
+## Exception
+### java.lang.NumberFormatException: For input string: ""19","
+- If we not remove the non-digt char by using the regular expression first,
+- when we try to conver the String to Integer, it will occur a Number fromat Exception.
+
+``` java
+// need to convert the string fisrt to prevent the number format exception when we need to convert the string to integer
+String str = words[15].replaceAll("[^\\d.]", "");
+if (Integer.parseInt(s) <= 1) {
+...
+}
+``` 
 ## Result Output
 ```
 Project Name: "Reynard City Triple Threat Kickstarter"
