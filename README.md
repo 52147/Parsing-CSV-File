@@ -184,6 +184,18 @@ Search wearable, 2 times.
 wearable
 Search wearable, 3 times.
 ```
+
+## Exception
+### java.lang.NumberFormatException: For input string: ""19","
+- if we not remove the non-digt char by using the regular expression first.
+- when we try to conver the String to Integer, it will occur a Number fromat Exception
+
+``` java
+// need to conver the string fisrt to prevent the number format exception when we need to convert the string to integer
+String str = words[15].replaceAll("[^\\d.]", "");
+if (Integer.parseInt(s) <= 1) {
+``` 
+
 ## Reference
 - https://www.geeksforgeeks.org/java-program-to-merge-contents-of-all-the-files-in-a-directory/
 - https://www.candidjava.com/tutorial/program-to-search-word-in-a-file/
